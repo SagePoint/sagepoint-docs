@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "properties": {
+        "division": {
+            "title": "Division",
+            "type": "string"
+        },
+        "employer": {
+            "title": "Employer Name",
+            "type": "string"
+        },
+        "enabled": {
+            "description": "Search for enabled or disabled account?",
+            "title": "Account Status",
+            "type": "boolean"
+        },
+        "location": {
+            "description": "Description of office location (i.e. Boston)",
+            "title": "Office Location",
+            "type": "string"
+        },
+        "q": {
+            "description": "Query string to search for",
+            "title": "Query String",
+            "type": "string"
+        },
+        "title": {
+            "title": "Employee Title",
+            "type": "string"
+        },
+        "user_type": {
+            "title": "User Role",
+            "type": "string"
+        }
+    },
+    "type": "object"
+}

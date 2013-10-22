@@ -1,0 +1,15 @@
+{
+     "id": "123",
+     "address1": "123 ass man ln.",
+     "address2": "Suite 102",
+     "city": "Beet Taco",
+     "state": "LA",
+     "zip": "11102",
+     "title": "My Sweet Office",
+     "country": "Asstonia",
+     "enabled": true,
+     "is_admin": false,
+     "latitude": 12.34,
+     "longitude": 43.21
+}
+

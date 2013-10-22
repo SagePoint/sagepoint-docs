@@ -1,0 +1,92 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "file:///Users/jarad.delorenzo/code/sagepoint-docs/schemas/output/absolute/user.json",
+    "properties": {
+        "active_user_code": {
+            "title": "Active User Code",
+            "type": "string"
+        },
+        "authentication_token": {
+            "title": "Authentication Token",
+            "type": "string"
+        },
+        "created_at": {
+            "title": "Created At",
+            "type": "string"
+        },
+        "current_sign_in_at": {
+            "title": "Current sign in Date",
+            "type": "string"
+        },
+        "email": {
+            "title": "Email",
+            "type": "string"
+        },
+        "employer": {
+            "$ref": "file:///Users/jarad.delorenzo/code/sagepoint-docs/schemas/output/absolute/./employer.json",
+            "title": "Employer",
+            "type": "object"
+        },
+        "encrypted_password": {
+            "title": "Encrypted Password",
+            "type": "string"
+        },
+        "id": {
+            "title": "Auto-generated ID",
+            "type": "number"
+        },
+        "is_enabled": {
+            "title": "Enabled?",
+            "type": "number"
+        },
+        "last_report_update": {
+            "title": "Last report update",
+            "type": "string"
+        },
+        "last_sign_in_at": {
+            "title": "Last sign in date",
+            "type": "string"
+        },
+        "last_sign_in_ip": {
+            "title": "Last sign in IP",
+            "type": "string"
+        },
+        "password": {
+            "title": "Deprecated password",
+            "type": "string"
+        },
+        "password_salt": {
+            "title": "Password Salt",
+            "type": "string"
+        },
+        "remember_created_at": {
+            "title": "Remember created at",
+            "type": "string"
+        },
+        "report_seq": {
+            "title": "Report sequence",
+            "type": "array"
+        },
+        "reset_password_sent_at": {
+            "title": "Reset password sent date",
+            "type": "string"
+        },
+        "reset_password_token": {
+            "title": "Password reset token",
+            "type": "string"
+        },
+        "sign_in_count": {
+            "title": "Sign in count",
+            "type": "number"
+        },
+        "tos_accepted": {
+            "title": "Terms of Service",
+            "type": "string"
+        },
+        "updated_at": {
+            "title": "Last updated at",
+            "type": "string"
+        }
+    },
+    "type": "object"
+}

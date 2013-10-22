@@ -1,0 +1,93 @@
+
+{
+     "type":"object",
+     "$schema": "http://json-schema.org/draft-04/schema",
+     "id": "user",
+     "properties":{
+          "active_user_code": {
+               "type":"string",
+               "title": "Active User Code"
+          },
+          "authentication_token": {
+               "type":"string",
+               "title": "Authentication Token"
+          },
+          "created_at": {
+               "type":"string",
+               "title": "Created At"
+          },
+          "current_sign_in_at": {
+               "type":"string",
+               "title": "Current sign in Date"
+          },
+          "email": {
+               "type":"string",
+               "title": "Email"
+          },
+          "employer": {
+               "type":"object",
+               "$ref": "http://sagepoint.github.io/sagepoint-docs/schemas/templates/employer.json",
+               "title": "Employer"
+          },
+          "encrypted_password": {
+               "type":"string",
+               "title": "Encrypted Password"
+          },
+          "id": {
+               "type":"number",
+               "title": "Auto-generated ID"
+          },
+          "is_enabled": {
+               "type":"number",
+               "title": "Enabled?"
+          },
+          "last_report_update": {
+               "type":"string",
+               "title": "Last report update"
+          },
+          "last_sign_in_at": {
+               "type":"string",
+               "title": "Last sign in date"
+          },
+          "last_sign_in_ip": {
+               "type":"string",
+               "title": "Last sign in IP"
+          },
+          "password_salt": {
+               "type":"string",
+               "title": "Password Salt"
+          },
+          "password": {
+               "type":"string",
+               "title": "Deprecated password"
+          },
+          "remember_created_at": {
+               "type":"string",
+               "title": "Remember created at"
+          },
+          "report_seq": {
+               "type":"array",
+               "title": "Report sequence"
+          },
+          "reset_password_sent_at": {
+               "type":"string",
+               "title": "Reset password sent date"
+          },
+          "reset_password_token": {
+               "type":"string",
+               "title": "Password reset token"
+          },
+          "sign_in_count": {
+               "type":"number",
+               "title": "Sign in count"
+          },
+          "tos_accepted": {
+               "type":"string",
+               "title": "Terms of Service"
+          },
+          "updated_at": {
+               "type":"string",
+               "title": "Last updated at"
+          }
+     }
+}

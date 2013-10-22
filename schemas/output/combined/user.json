@@ -1,0 +1,289 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "user",
+    "properties": {
+        "active_user_code": {
+            "title": "Active User Code",
+            "type": "string"
+        },
+        "authentication_token": {
+            "title": "Authentication Token",
+            "type": "string"
+        },
+        "created_at": {
+            "title": "Created At",
+            "type": "string"
+        },
+        "current_sign_in_at": {
+            "title": "Current sign in Date",
+            "type": "string"
+        },
+        "email": {
+            "title": "Email",
+            "type": "string"
+        },
+        "employer": {
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "properties": {
+                "address": {
+                    "$schema": "http://json-schema.org/draft-04/schema",
+                    "properties": {
+                        "address1": {
+                            "type": "string"
+                        },
+                        "address2": {
+                            "type": "string"
+                        },
+                        "city": {
+                            "type": "string"
+                        },
+                        "country": {
+                            "type": "string"
+                        },
+                        "enabled": {
+                            "type": "boolean"
+                        },
+                        "id": {
+                            "type": "number"
+                        },
+                        "is_admin": {
+                            "type": "boolean"
+                        },
+                        "latitude": {
+                            "type": "number"
+                        },
+                        "longitude": {
+                            "type": "number"
+                        },
+                        "state": {
+                            "type": "string"
+                        },
+                        "title": {
+                            "type": "string"
+                        },
+                        "zip": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "title",
+                        "address1",
+                        "state",
+                        "zip",
+                        "country"
+                    ],
+                    "type": "object"
+                },
+                "allow_resource_task_editing": {
+                    "type": "boolean"
+                },
+                "allow_unlock": {
+                    "type": "boolean"
+                },
+                "certs_enabled": {
+                    "type": "boolean"
+                },
+                "clearance_enabled": {
+                    "type": "boolean"
+                },
+                "custom_field_names": {
+                    "type": "string"
+                },
+                "custom_logo": {
+                    "type": "string"
+                },
+                "full_time_utilization": {
+                    "min": 0,
+                    "type": "number"
+                },
+                "id": {
+                    "type": "number"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "pc_enabled": {
+                    "type": "boolean"
+                },
+                "pc_public": {
+                    "type": "boolean"
+                },
+                "res_public": {
+                    "type": "number"
+                },
+                "resource_columns": {
+                    "type": "string"
+                },
+                "resources_shared": {
+                    "type": "number"
+                },
+                "send_email_flag": {
+                    "type": "boolean"
+                },
+                "sharing_key": {
+                    "type": "string"
+                },
+                "suggestion_flag": {
+                    "type": "boolean"
+                },
+                "survey_profile": {
+                    "$schema": "http://json-schema.org/draft-04/schema",
+                    "properties": {
+                        "bands": {
+                            "type": "number"
+                        },
+                        "cert": {
+                            "type": "number"
+                        },
+                        "confidence_bands": {
+                            "type": "number"
+                        },
+                        "corner_value_max": {
+                            "type": "number"
+                        },
+                        "corner_value_mid_1": {
+                            "type": "number"
+                        },
+                        "corner_value_mid_2": {
+                            "type": "number"
+                        },
+                        "corner_value_min": {
+                            "type": "number"
+                        },
+                        "curve_type": {
+                            "type": "number"
+                        },
+                        "history_duration_days": {
+                            "type": "number"
+                        },
+                        "id": {
+                            "type": "number"
+                        },
+                        "lfm_ts_distant": {
+                            "type": "number"
+                        },
+                        "lfm_ts_recent": {
+                            "type": "number"
+                        },
+                        "max_rating_value": {
+                            "type": "number"
+                        },
+                        "min_rating_value": {
+                            "type": "number"
+                        },
+                        "num_answers": {
+                            "type": "number"
+                        },
+                        "num_skill_levels": {
+                            "type": "number"
+                        },
+                        "pvalues": {
+                            "type": "string"
+                        },
+                        "resume_task_multiplier": {
+                            "type": "number"
+                        },
+                        "retention_rate": {
+                            "type": "number"
+                        },
+                        "skill_level_max": {
+                            "type": "number"
+                        },
+                        "skill_level_min": {
+                            "type": "number"
+                        },
+                        "skill_survey_score": {
+                            "type": "number"
+                        },
+                        "sum_coefficient": {
+                            "type": "number"
+                        },
+                        "time_slices": {
+                            "type": "number"
+                        },
+                        "uvalues": {
+                            "type": "string"
+                        },
+                        "version": {
+                            "type": "number"
+                        }
+                    },
+                    "type": "object"
+                },
+                "use_similarity": {
+                    "type": "boolean"
+                },
+                "was_onboarded": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "id",
+                "name"
+            ],
+            "type": "object"
+        },
+        "encrypted_password": {
+            "title": "Encrypted Password",
+            "type": "string"
+        },
+        "id": {
+            "title": "Auto-generated ID",
+            "type": "number"
+        },
+        "is_enabled": {
+            "title": "Enabled?",
+            "type": "number"
+        },
+        "last_report_update": {
+            "title": "Last report update",
+            "type": "string"
+        },
+        "last_sign_in_at": {
+            "title": "Last sign in date",
+            "type": "string"
+        },
+        "last_sign_in_ip": {
+            "title": "Last sign in IP",
+            "type": "string"
+        },
+        "password": {
+            "title": "Deprecated password",
+            "type": "string"
+        },
+        "password_salt": {
+            "title": "Password Salt",
+            "type": "string"
+        },
+        "remember_created_at": {
+            "title": "Remember created at",
+            "type": "string"
+        },
+        "report_seq": {
+            "title": "Report sequence",
+            "type": "array"
+        },
+        "reset_password_sent_at": {
+            "title": "Reset password sent date",
+            "type": "string"
+        },
+        "reset_password_token": {
+            "title": "Password reset token",
+            "type": "string"
+        },
+        "sign_in_count": {
+            "title": "Sign in count",
+            "type": "number"
+        },
+        "tos_accepted": {
+            "title": "Terms of Service",
+            "type": "string"
+        },
+        "updated_at": {
+            "title": "Last updated at",
+            "type": "string"
+        }
+    },
+    "type": "object"
+}

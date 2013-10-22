@@ -1,0 +1,40 @@
+{
+     "type":"object",
+     "$schema": "http://json-schema.org/draft-04/schema",
+     "properties":{
+	  "type": "array",
+	  "items": {
+          "name": {
+               "type":"string",
+               "title": "Name"
+          },
+          "division": {
+               "type":"string",
+               "title": "Division"
+          },
+          "employer": {
+               "type":"string",
+               "title": "Employer Name"
+          },
+          "enabled": {
+               "type":"boolean",
+               "title": "Account Status",
+               "description": "Search for enabled or disabled account?"
+          },
+          "location": {
+               "type":"string",
+               "title": "Office Location",
+               "description": "Description of office location (i.e. Boston)"
+          },
+          "title": {
+               "type":"string",
+               "title": "Employee Title"
+          },
+          "user_type": {
+               "type":"string",
+               "title": "User Role"
+          }
+
+	  }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "properties": {
+        "address1": {
+            "type": "string"
+        },
+        "address2": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        },
+        "country": {
+            "type": "string"
+        },
+        "enabled": {
+            "type": "boolean"
+        },
+        "id": {
+            "type": "number"
+        },
+        "is_admin": {
+            "type": "boolean"
+        },
+        "latitude": {
+            "type": "number"
+        },
+        "longitude": {
+            "type": "number"
+        },
+        "state": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "zip": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "id",
+        "title",
+        "address1",
+        "state",
+        "zip",
+        "country"
+    ],
+    "type": "object"
+}

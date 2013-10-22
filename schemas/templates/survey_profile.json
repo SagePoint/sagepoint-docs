@@ -1,0 +1,84 @@
+{
+     "type":"object",
+     "$schema": "http://json-schema.org/draft-04/schema",
+     "properties":{
+          "bands": {
+               "type":"number"
+          },
+          "cert": {
+               "type":"number"
+          },
+          "confidence_bands": {
+               "type":"number"
+          },
+          "corner_value_max": {
+               "type":"number"
+          },
+          "corner_value_mid_1": {
+               "type":"number"
+          },
+          "corner_value_mid_2": {
+               "type":"number"
+          },
+          "corner_value_min": {
+               "type":"number"
+          },
+          "curve_type": {
+               "type":"number"
+          },
+          "history_duration_days": {
+               "type":"number"
+          },
+          "id": {
+               "type":"number"
+          },
+          "lfm_ts_distant": {
+               "type":"number"
+          },
+          "lfm_ts_recent": {
+               "type":"number"
+          },
+          "max_rating_value": {
+               "type":"number"
+          },
+          "min_rating_value": {
+               "type":"number"
+          },
+          "num_answers": {
+               "type":"number"
+          },
+          "num_skill_levels": {
+               "type":"number"
+          },
+          "pvalues": {
+               "type":"string"
+          },
+          "resume_task_multiplier": {
+               "type":"number"
+          },
+          "retention_rate": {
+               "type":"number"
+          },
+          "skill_level_max": {
+               "type":"number"
+          },
+          "skill_level_min": {
+               "type":"number"
+          },
+          "skill_survey_score": {
+               "type":"number"
+          },
+          "sum_coefficient": {
+               "type":"number"
+          },
+          "time_slices": {
+               "type":"number"
+          },
+          "uvalues": {
+               "type":"string"
+          },
+          "version": {
+               "type":"number"
+          }
+     }
+}

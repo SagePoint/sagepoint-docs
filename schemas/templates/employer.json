@@ -1,0 +1,72 @@
+{
+     "type":"object",
+     "$schema": "http://json-schema.org/draft-04/schema",
+     "properties":{
+          "allow_resource_task_editing": { "type":"boolean" },
+          "allow_unlock": {
+               "type":"boolean"
+          },
+          "certs_enabled": {
+               "type":"boolean"
+          },
+          "clearance_enabled": {
+               "type":"boolean"
+          },
+          "custom_field_names": {
+               "type":"string"
+          },
+          "custom_logo": {
+               "type":"string"
+          },
+          "full_time_utilization": {
+               "type":"number",
+               "min":0
+          },
+          "id": {
+               "type":"number"
+          },
+          "address": {
+               "type":"object",
+               "description": "HQ Address",
+               "$ref": "http://sagepoint.github.io/sagepoint-docs/schemas/templates/address.json"
+          },
+          "name": {
+               "type":"string"
+          },
+          "pc_enabled": {
+               "type":"boolean"
+          },
+          "pc_public": {
+               "type":"boolean"
+          },
+          "res_public": {
+               "type":"number"
+          },
+          "resource_columns": {
+               "type":"string"
+          },
+          "resources_shared": {
+               "type":"number"
+          },
+          "send_email_flag": {
+               "type":"boolean"
+          },
+          "sharing_key": {
+               "type":"string"
+          },
+          "suggestion_flag": {
+               "type":"boolean"
+          },
+          "survey_profile": {
+               "type":"object",
+               "$ref":"http://sagepoint.github.io/sagepoint-docs/schemas/templates/survey_profile.json"
+          },
+          "use_similarity": {
+               "type":"boolean"
+          },
+          "was_onboarded": {
+               "type":"boolean"
+          }
+     },
+     "required": [ "id", "name"]
+}

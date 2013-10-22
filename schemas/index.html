@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="/docs/css/bootstrap.css">
+	<link rel="stylesheet" href="/docs/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="/docs/css/main.css">
+</head>
+<body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <div class="container">
+
+            	<div class="masthead">
+            		<h3 class="text-muted">SagePoint Software&#8482;</h3>
+            		<ul class="nav nav-justified">
+            			<li><a href="/docs">Getting Started</a></li>
+            			<li><a href="#">API Reference</a></li>
+            			<li class="active"><a href="/docs/schemas/index.html">Message Schemas</a></li>
+            			<li><a href="#">Examples</a></li>
+            			<li><a href="#">Contact</a></li>
+            		</ul>
+            	</div>
+
+            	<!-- Jumbotron -->
+            	<div class="jumbotron">
+            		<h1>Message Schemas</h1>
+            		<p class="lead">There are three types of schemas: Entities, Requests, and Responses</p>
+            	</div>
+
+            	<!-- Example row of columns -->
+            	<div class="row">
+            		<div class="col-lg-4">
+            			<h2>Entities</h2>
+            			<p>Entities describe objects in the SagePoint database. These include 'things' such as a resource, a company, or a project.</p>
+            			<p><a class="btn btn-primary" href="#">Show Me &raquo;</a></p>
+            		</div>
+            		<div class="col-lg-4">
+            			<h2>Requests</h2>
+            			<p>Requests describe the format of all queries you can make to the SagePoint API. An example of a request query would be 'Show me all users named Tom, please'</p>
+            			<p><a class="btn btn-primary" href="#">Show Me &raquo;</a></p>
+            		</div>
+            		<div class="col-lg-4">
+            			<h2>Responses</h2>
+            			<p>A response describes the format of all data returned from SagePoint following a request. These can include a list of resources, confirmation of an action, and all errors you may receive.</p>
+            			<p><a class="btn btn-primary" href="#">Show Me &raquo;</a></p>
+            		</div>
+            	</div>
+
+            	<h1>Entities</h1>
+            	<div class="panel panel-default">
+            		<div class="panel-body">
+            			<ul class="list-unstyled">
+            				<li><a href="./templates/address.json">Address</a></li>
+            				<li><a href="./templates/employer.json">Employer</a></li>
+            				<li><a href="./templates/survey_profile.json">Survey Profile</a></li>
+            				<li><a href="./templates/user.json">User</a></li>
+            			</ul>
+            		</div>
+            	</div>
+            	<h1>Requests</h1>
+            	<div class="panel panel-default">
+            		<div class="panel-body">
+            			<ul class="list-unstyled">
+            				<li><a href="./templates/user_search_request.json">User Search</a></li>
+            			</ul>
+            		</div>
+            	</div>
+            	<h1>Responses</h1>
+            	<div class="panel panel-default">
+            		<div class="panel-body">
+            			<ul class="list-unstyled">
+            				<li><a href="./templates/user_search_response.json">List of users</a></li>
+            			</ul>
+            		</div>
+            	</div>
+
+            	<!-- Site footer -->
+            	<div class="footer">
+            		<p>&copy; SagePoint Software&#8482; 2013</p>
+            	</div>
+
+            </div> <!-- /container -->
+
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="/docs/js/jquery.js"><\/script>')</script>
+            <script src="/docs/js/bootstrap.js"></script>
+            <script src="/docsjs/main.js"></script>
+
+            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+            <script>
+            	(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            	e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            	e.src='//www.google-analytics.com/analytics.js';
+            	r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            	ga('create','UA-XXXXX-X');ga('send','pageview');
+            </script>
+        </body>
+        </html>
